@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  *  
  * </pre>
  */
-@Controller("/cloudmanager/main")
+@Controller("/cloud/main")
 public class MainController {
     
     
@@ -37,18 +37,21 @@ public class MainController {
     
     /**
      * 홈페이지로 이동한다.
-     *
+     * 메인 페이지로 이동한다.
+     * cloud/main or cloud
+     * 
      * @return
      * @throws Exception
      */
-    @RequestMapping(value={"/main"})
+    @RequestMapping(value={"/main","/"})
     public String moveMainPage() throws Exception{
         return "index";
     }
     
     /**
-     * 홈페이지로 이동한다.
-     *
+     * 에러 페이지로 이동한다.
+     * cloud/error
+     * 
      * @return
      * @throws Exception
      */

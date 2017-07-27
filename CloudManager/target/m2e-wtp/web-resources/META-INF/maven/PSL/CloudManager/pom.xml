@@ -25,6 +25,7 @@
     <properties>
         <java-version>1.7</java-version>
         <spring.maven.artifact.version>4.1.2.RELEASE</spring.maven.artifact.version>
+        <org.springframework>4.1.2.RELEASE</org.springframework>
         <egovframework.rte.version>3.6.0</egovframework.rte.version>
         <org.apache.tiles-version>3.0.7</org.apache.tiles-version>
         <javax.servlet.servlet-api>3.0.1</javax.servlet.servlet-api>
@@ -36,6 +37,7 @@
         <org.antlr>3.5</org.antlr>
         <org.mariadb.jdbc>1.5.8</org.mariadb.jdbc>
         <com.fasterxml.jackson.core>2.8.8</com.fasterxml.jackson.core>
+        <com.google.code.gson>2.6.2</com.google.code.gson>
     </properties>
 
     <repositories>
@@ -180,13 +182,19 @@ https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
             <artifactId>jackson-core</artifactId>
             <version>${com.fasterxml.jackson.core}</version>
         </dependency>
-        
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>${com.fasterxml.jackson.core}</version>
         </dependency>
-
+        
+<!-- JSON : Gson JSONObject JSONPASER et -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${com.google.code.gson}</version>
+        </dependency>
+        
 <!-- 파일 업로드 -->
         <dependency>
             <groupId>commons-io</groupId>
@@ -266,7 +274,12 @@ https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
             <version>53.1</version>
         </dependency>
         
-
+<!-- 웹소켓 :  -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-websocket</artifactId>
+            <version>${org.springframework}</version>
+        </dependency>
     </dependencies>
 
     <build>

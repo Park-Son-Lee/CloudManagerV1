@@ -14,7 +14,7 @@
   </filter>
   <filter-mapping>
     <filter-name>encodingFilter</filter-name>
-    <url-pattern>/cloudmanager/*</url-pattern>
+    <url-pattern>/cloud/*</url-pattern>
     <url-pattern>/resources/*</url-pattern>
   </filter-mapping>
   <listener>
@@ -37,7 +37,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>action</servlet-name>
-    <url-pattern>/cloudmanager/*</url-pattern>
+    <url-pattern>/cloud/*</url-pattern>
     <url-pattern>/resources/*</url-pattern>
   </servlet-mapping>
 <servlet>
