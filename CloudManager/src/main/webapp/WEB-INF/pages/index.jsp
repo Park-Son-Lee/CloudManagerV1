@@ -3,15 +3,14 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>메인페이지</title>
-</head>
+<!-- Main Header -->
+<tiles:insertAttribute name="main-header"/>
+<!-- /.Main Header -->
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper" id="wrapper">
-  <!-- Main Header -->
-  <tiles:insertAttribute name="main-header"/>
-  <!-- /.Main Header -->
+  <!-- Main TopBar -->
+  <tiles:insertAttribute name="main-topbar"/>
+  <!-- /.Main TopBar -->
   
   <!-- Left side column. contains the logo and sidebar -->
   <tiles:insertAttribute name="main-sidebar" />

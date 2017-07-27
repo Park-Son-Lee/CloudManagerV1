@@ -34,6 +34,8 @@
         <org.apache.commons-dbcp2>2.1.1</org.apache.commons-dbcp2>
         <org.hsqldb>2.3.2</org.hsqldb>
         <org.antlr>3.5</org.antlr>
+        <org.mariadb.jdbc>1.5.8</org.mariadb.jdbc>
+        <com.fasterxml.jackson.core>2.8.8</com.fasterxml.jackson.core>
     </properties>
 
     <repositories>
@@ -160,7 +162,7 @@ https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
         <dependency>
             <groupId>org.mariadb.jdbc</groupId>
             <artifactId>mariadb-java-client</artifactId>
-            <version>1.5.8</version>
+            <version>${org.mariadb.jdbc}</version>
         </dependency>
 
 <!-- DB : cubrid driver -->
@@ -172,6 +174,18 @@ https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
         </dependency>
         -->
 
+<!-- JSON : com.fasterxml.jackson.core -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>${com.fasterxml.jackson.core}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${com.fasterxml.jackson.core}</version>
+        </dependency>
 
 <!-- 파일 업로드 -->
         <dependency>
@@ -251,6 +265,8 @@ https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
             <artifactId>icu4j</artifactId>
             <version>53.1</version>
         </dependency>
+        
+
     </dependencies>
 
     <build>

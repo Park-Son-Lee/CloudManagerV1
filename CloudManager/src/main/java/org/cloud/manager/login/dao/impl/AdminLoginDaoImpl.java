@@ -1,8 +1,8 @@
-package org.cloud.manager.login.dao;
+package org.cloud.manager.login.dao.impl;
 
-import javax.annotation.Resource;
-
+import org.cloud.manager.login.dao.LoginDao;
 import org.cloud.manager.login.vo.LoginAccessVo;
+import org.springframework.stereotype.Repository;
 
 import egovframework.rte.psl.dataaccess.EgovAbstractDAO;
 /**
@@ -21,7 +21,7 @@ import egovframework.rte.psl.dataaccess.EgovAbstractDAO;
  *  
  * </pre>
  */
-@Resource(name="adminLoginDao")
+@Repository("adminLoginDao")
 public class AdminLoginDaoImpl extends EgovAbstractDAO implements LoginDao{
 
     @Override

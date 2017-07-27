@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  *  
  * </pre>
  */
-@Controller(value="/cloudmanager/main")
+@Controller("/cloudmanager/main")
 public class MainController {
     
     
@@ -41,10 +41,22 @@ public class MainController {
      * @return
      * @throws Exception
      */
-    @RequestMapping(value={"/",""})
+    @RequestMapping(value={"/main"})
     public String moveMainPage() throws Exception{
         return "index";
     }
+    
+    /**
+     * 홈페이지로 이동한다.
+     *
+     * @return
+     * @throws Exception
+     */
+    @RequestMapping(value={"/error"})
+    public String moveErrorPage() throws Exception{
+        return "error";
+    }
+    
     
 //    public String addBBSUseInf(@ModelAttribute("searchVO") BoardUseInfVO bdUseVO, ModelMap model) throws Exception {
 //

@@ -18,7 +18,7 @@ package org.cloud.manager.login.vo;
 public class LoginAccessVo {
    private String adminNo="";//PK_NO
    private String adminId="";//아이디
-   private String adminPassword="";//비밀번호
+   private String adminPw="";//비밀번호
    private String adminName="";//이름
 public String getAdminNo() {
     return adminNo;
@@ -32,11 +32,11 @@ public String getAdminId() {
 public void setAdminId(String adminId) {
     this.adminId = adminId;
 }
-public String getAdminPassword() {
-    return adminPassword;
+public String getAdminPw() {
+    return adminPw;
 }
-public void setAdminPassword(String adminPassword) {
-    this.adminPassword = adminPassword;
+public void setAdminPw(String adminPw) {
+    this.adminPw = adminPw;
 }
 public String getAdminName() {
     return adminName;
@@ -46,7 +46,7 @@ public void setAdminName(String adminName) {
 }
 @Override
 public String toString() {
-    return "LoginAccessVo [adminNo=" + adminNo + ", adminId=" + adminId + ", adminPassword=" + adminPassword
-            + ", adminName=" + adminName + "]";
+    return "LoginAccessVo [adminNo=" + adminNo + ", adminId=" + adminId + ", adminPw=" + adminPw + ", adminName="
+            + adminName + "]";
 }
 }

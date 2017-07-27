@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  *  
  * </pre>
  */
-@Controller(value="/cloudmanager/login")
+@Controller("/cloudmanager/login")
 public class LoginController {
     
     /** 관리자 로그인 서비스 구현체  */
@@ -41,14 +41,14 @@ public class LoginController {
 //    EgovMessageSource egovMessageSource;
     
     /**
-     * 홈페이지로 이동한다.
+     * 로그인 페이지로 이동한다.
      *
      * @return
      * @throws Exception
      */
-    @RequestMapping(value={"/",""})
-    public String moveMainPage() throws Exception{
-        return "index";
+    @RequestMapping(value={"login"})
+    public String moveLoginPage() throws Exception{
+        return "login";
     }
     
 }
