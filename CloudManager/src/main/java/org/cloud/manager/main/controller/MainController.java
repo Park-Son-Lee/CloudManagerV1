@@ -43,7 +43,7 @@ public class MainController {
      * @return
      * @throws Exception
      */
-    @RequestMapping(value={"/main","/"})
+    @RequestMapping(value={"/main"})
     public String moveMainPage() throws Exception{
         return "index";
     }
